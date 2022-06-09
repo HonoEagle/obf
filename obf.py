@@ -37,7 +37,6 @@ class Oula:
 
     def thisisagooddefbro(script: str) -> str:
         print(stage("Starting function!"))
-        # print(stage("Preparing anti skid layer...")) just to be sure
         script = Oula.anti_skid(script=script)
         print(stage("Adding layer 1!"))
         script = Oula.layer_1(script=script)
@@ -195,7 +194,6 @@ def main():
     
     print('\n')
     input(stage("Done!", '!'))
-    sys.exit()
 
 
 main()
