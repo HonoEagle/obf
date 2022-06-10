@@ -1,7 +1,7 @@
 # obf
  
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=honoeagle&repo=obf)](https://github.com/honoeagle/honoeagle.github.io)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=honoeagle&repo=obf)](https://github.com/honoeagle/obf)
 </br>
 
 
@@ -9,7 +9,6 @@
 
 The things you need.
 
-* A text editor like Visual Studio Code, Geany, NotePad++, Sublime Text, etc...
 * python3
 
 <strong>
