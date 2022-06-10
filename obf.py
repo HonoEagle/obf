@@ -2,6 +2,7 @@ from marshal import dumps
 from binascii import hexlify
 from random import randint, shuffle
 import sys
+import time
 
 from pystyle import *
 
@@ -195,5 +196,15 @@ def main():
     print('\n')
     input(stage("Done!", '!'))
 
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n")
+        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}KeyboardInterrupt Detected!{Col.reset}""")
+        time.sleep(1)
+        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Exiting...{Col.reset}""")
+        time.sleep(2)
+        exit()
 
 main()
