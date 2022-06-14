@@ -25,7 +25,7 @@ purple = Col.StaticMIX([Col.blue, Col.purple])
 
 def stage(text: str, symbol: str = '...') -> str:
     ppurple = purple if symbol == '...' else Col.light_blue
-    return f""" {Col.Symbol(symbol, ppurple, Col.blue)} {ppurple}{text}{Col.reset}"""
+    return f""" {Col.Symbol(symbol, ppurple, Col.blue)} {ppurple}{text}"""
 
 
 class Oula:
@@ -177,7 +177,7 @@ def main():
             script = f.read().decode('utf-8')
         filename = file.split('\\')[-1]
     except:
-        input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Invalid file!{Col.reset}""")
+        input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Invalid file!""")
         exit()
 
     script = Oula.thisisagooddefbro(script=script)
@@ -193,9 +193,9 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         print("\n")
-        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}KeyboardInterrupt Detected!{Col.reset}""")
+        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}KeyboardInterrupt Detected!""")
         time.sleep(1)
-        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Exiting...{Col.reset}""")
+        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Exiting...""")
         time.sleep(2)
         exit()
 
