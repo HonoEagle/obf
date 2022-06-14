@@ -20,10 +20,6 @@ banner1 = r'''
                                                                                                         '''[1:]
 
 
-
-
-#banner = Add.Add(banner1, center=True)
-
 purple = Col.StaticMIX([Col.blue, Col.purple])
 
 
