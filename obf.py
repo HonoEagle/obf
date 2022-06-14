@@ -38,6 +38,7 @@ class Oula:
 
     def thisisagooddefbro(script: str) -> str:
         print(stage("Starting function!"))
+        print(stage("Starting skid function..."))
         script = Oula.anti_skid(script=script)
         print(stage("Adding layer 1!"))
         script = Oula.layer_1(script=script)
