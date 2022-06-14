@@ -136,8 +136,6 @@ except:
         print(stage("Camouflation of the obfuscated code..."))
         script = fr"""
 
-
-
 __author__ = "honoeagle"
 __github__ = "https://github.com/honoeagle/obf"
 __discord__ = ""
@@ -172,12 +170,12 @@ if __name__ == '__main__':
 
 def main():
     System.Size(150, 40)
-    System.Title("Obfuscator")
+    System.Title("Skulls of Oula")
     Cursor.HideCursor()
     print()
     print(Colorate.Diagonal(Colors.purple_to_blue, Center.XCenter(banner1 + '\n\n')))
 
-    file = input(stage(f"Drag the file you want to obfuscate ", "?")).replace('"','').replace("'","")
+    file = input(stage(f"Drag the pyhton file you want to obfuscate ", "?")).replace('"','').replace("'","")
     print('\n')
 
     try:
