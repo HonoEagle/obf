@@ -62,8 +62,6 @@ class Oula:
 
     def anti_skid(script: str) -> str:
         return r"""
-
-
 try:
     if (
         __author__ != "honoeagle" or
@@ -132,7 +130,6 @@ except:
         codevars = "\n".join(f"{a} = Func.calculate({randint(1,9)}){' ' * 500},Func.define('{a}', {b})" for a, b in vars.items())
         print(stage("Camouflation of the obfuscated code..."))
         script = fr"""
-
 __author__ = "honoeagle"
 __github__ = "https://github.com/honoeagle/obf"
 __discord__ = ""
