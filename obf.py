@@ -169,7 +169,7 @@ def main():
     print()
     print(Colorate.Diagonal(Colors.purple_to_blue, Center.XCenter(banner1 + '\n\n')))
 
-    file = input(stage(f"Drag the pyhton file you want to obfuscate ", "?")).replace('"','').replace("'","")
+    file = input(stage(f"Drag the pyhton file you want to obfuscate: ", "?")).replace('"','').replace("'","")
     print('\n')
 
     try:
@@ -177,8 +177,7 @@ def main():
             script = f.read().decode('utf-8')
         filename = file.split('\\')[-1]
     except:
-        input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Invalid file!""")
-        exit()
+        input(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Invalid file!\n {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}ENTER TO RETRY""")
 
     script = Oula.thisisagooddefbro(script=script)
 
@@ -187,16 +186,16 @@ def main():
     
     print('\n')
     input(stage("Done!", '!'))
+    System.Exit()
+    
 
 if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
         print("\n")
-        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}KeyboardInterrupt Detected!""")
+        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Exiting...{Col.reset}""")
         time.sleep(1)
-        print(f""" {Col.Symbol('!', Col.light_red, Col.blue)} {Col.light_red}Exiting...""")
-        time.sleep(2)
         exit()
 
 main()
